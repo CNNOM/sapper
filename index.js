@@ -157,11 +157,15 @@ function revealCells(i, j) {
     countNum--;
 
     cell.classList.add('revealed');
+    if(value !== "0" && value !== "*"){
+        revealed[`${i}${j}`] = true;
+    }
 
     if (value === "0") {
         for (let x = i - 1; x <= i + 1; x++) {
             for (let y = j - 1; y <= j + 1; y++) {
                 if (x !== i || y !== j) {
+
                     revealCells(x, y);
                 }
             }
