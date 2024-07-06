@@ -1,0 +1,52 @@
+.minesweeper_field{
+    min-width:35px;
+    min-height:35px;
+    border:4px outset black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgba(128, 128, 128, 0.81);
+}
+
+.minesweeper_field:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+.minesweeper_row{
+    display: flex;
+
+}
+.mines{
+    background-color:red;
+    border:1px solid rgba(128, 128, 128, 0.85);
+    font-weight: 1000;
+}
+.fieledNum{
+    border:1px solid rgba(128, 128, 128, 0.85);
+    background-color: white;
+    font-weight: 1000;
+}
+
+.white{color:white;}
+.blue{color:blue;}
+.green{color:green;}
+.red{color:red;}
+.darkblue{color:darkblue;}
+.brown{color:brown;}
+.cyan{color:cyan;}
+.black{color:black;}
+.gray{color:gray;}
+
+.flag{
+    background-image: url("flag.svg");
+    height:25px;
+    width:25px;
+}
+.timer,
+.min_count{
+    height: 50px;
+    width: 70px;
+    border:1px solid rgba(128, 128, 128, 0.85);
+
+}
