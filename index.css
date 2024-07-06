@@ -15,7 +15,6 @@
 
 .minesweeper_row{
     display: flex;
-
 }
 .mines{
     background-color:red;

@@ -69,7 +69,7 @@ function printArrHtml() {
 
         for (let j = 0; j < COLS; j++) {
             let cellDiv = document.createElement("button");
-            cellDiv.className = "minesweeper_field fieledNum";
+            cellDiv.className = "minesweeper_field";
             cellDiv.id = `cell_${i}_${j}`;
             revealed[`${i}${j}`] = false;
             flagged[`${i}${j}`] = false;
@@ -157,7 +157,7 @@ function revealCells(i, j) {
     countNum--;
 
     cell.classList.add('revealed');
-    if(value !== "0" && value !== "*"){
+    if(value !== "0"){
         revealed[`${i}${j}`] = true;
     }
 
